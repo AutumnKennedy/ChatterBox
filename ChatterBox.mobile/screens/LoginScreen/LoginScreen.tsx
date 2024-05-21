@@ -9,7 +9,7 @@ type FormData = {
     username: string
     password: string
   }
-export default function RegisterScreen () {
+export default function LoginScreen () {
     const {
         control,
         handleSubmit,
@@ -29,7 +29,7 @@ export default function RegisterScreen () {
         <SafeAreaView style={Style.container}>
         <ScrollView>
           <Text style={Style.title} variant="displayLarge">
-            Register
+            Sign In
           </Text>
           <View style={Style.form}>
             <Controller
@@ -76,7 +76,7 @@ export default function RegisterScreen () {
               onPress={handleSubmit(onSubmit)}
               style={Style.button}
             >
-              Register
+              Sign In
             </Button>
           </View>
           <StatusBar style="auto" />
