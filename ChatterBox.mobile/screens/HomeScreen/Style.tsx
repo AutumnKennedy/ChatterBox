@@ -5,7 +5,7 @@ const Style = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#b887e1'
+        backgroundColor: '#b887e1',
     },
     title:{
         marginTop: 120,
