@@ -1,20 +1,51 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { SafeAreaView } from "react-native";
+import HomeScreen from "./screens/HomeScreen/HomeScreen";
+import RegisterScreen from "./screens/RegisterScreen/RegisterScreen";
+import LoginScreen from "./screens/LoginScreen/LoginScreen";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { RootStackParamList } from "./data/types/Screens";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+  const Stack = createNativeStackNavigator<RootStackParamList>();
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  return (
+    <NavigationContainer>
+      <Stack.Navigator 
+      initialRouteName="Home" 
+      >
+        <Stack.Screen 
+        name="Home" 
+        component={HomeScreen} 
+        options={{ 
+          title: '',
+          headerStyle: {
+            backgroundColor: '#b887e1',
+          },
+        }}
+        />
+        <Stack.Screen 
+        name="Register" 
+        component={RegisterScreen} 
+        options={{ 
+          title: '',
+          headerStyle: {
+            backgroundColor: '#b887e1',
+          },
+        }}
+        />
+        <Stack.Screen 
+        name="Login" 
+        component={LoginScreen} 
+        options={{ 
+          title: '',
+          headerStyle: {
+            backgroundColor: '#b887e1',
+          },
+        }}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
+  )
+}
