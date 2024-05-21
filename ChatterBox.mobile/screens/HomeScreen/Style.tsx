@@ -8,7 +8,7 @@ const Style = StyleSheet.create({
         backgroundColor: '#b887e1',
     },
     title:{
-        marginTop: 120,
+        marginTop: 100,
         textAlign: 'center',
         color: '#fff',
     },

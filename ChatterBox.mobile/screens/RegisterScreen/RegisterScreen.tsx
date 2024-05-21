@@ -72,6 +72,7 @@ export default function RegisterScreen () {
             {errors.password && <Text style={Style.errorText}>Password is required.</Text>}
   
             <Button
+              buttonColor="#6558f5"
               mode="contained"
               onPress={handleSubmit(onSubmit)}
               style={Style.button}
