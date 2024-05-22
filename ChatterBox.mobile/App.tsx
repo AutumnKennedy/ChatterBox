@@ -6,12 +6,20 @@ import LoginScreen from "./screens/LoginScreen/LoginScreen";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { RootStackParamList } from "./data/types/Screens";
+import DashboardHeader from "./componets/headers/DashboardHeader";
+import { PaperProvider } from "react-native-paper";
+import NewChatButton from "./componets/NewChatButton";
+import SearchBar from "./componets/search/SearchBar";
+import JoinChatByIdInput from "./componets/join/JoinByChatIdInput";
+import Dashboard from "./screens/Auth/Dashboard/Dashboard";
 
 export default function App() {
   const Stack = createNativeStackNavigator<RootStackParamList>();
 
   return (
-    <NavigationContainer>
+    <PaperProvider>
+      {/* <Dashboard/> */}
+      <NavigationContainer>
       <Stack.Navigator 
       initialRouteName="Home" 
       >
@@ -47,5 +55,6 @@ export default function App() {
         />
       </Stack.Navigator>
     </NavigationContainer>
+    </PaperProvider>
   )
 }
