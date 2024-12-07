@@ -1,7 +1,8 @@
 import * as React from 'react';
-import { StyleSheet } from 'react-native';
-import { FAB, TextInput, Modal, Portal, Text } from 'react-native-paper';
+import { Alert, StyleSheet } from 'react-native';
+import { FAB, TextInput, Modal, Portal, Text, Button } from 'react-native-paper';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import Style from './Style';
 
 export default function NewChatButton() {
 
@@ -10,16 +11,21 @@ export default function NewChatButton() {
   const showModal = () => setVisible(true);
   const hideModal = () => setVisible(false);
 
+  const onSubmit = () => {
+    Alert.alert("Chat Room Created")
+  }
+  
   const containerStyle = {backgroundColor: 'white', padding: 20};
 
   return(
     <SafeAreaProvider>
       <Portal>
           <Modal visible={visible} onDismiss={hideModal} contentContainerStyle={containerStyle}>
-          <Text variant='titleMedium'>Create a New Chat Room!</Text>
+          <Text style={Style.title} variant='titleMedium'>Create a New Chat Room!</Text>
           <TextInput
             label="Enter Chat Room Name"
           />
+          <Button style={Style.createButton} mode="contained" onPress={onSubmit} >Create</Button>
           </Modal>
       </Portal>
       <FAB
