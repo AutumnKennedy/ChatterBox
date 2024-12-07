@@ -8,7 +8,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { RootStackParamList } from "./data/types/Screens";
 import DashboardHeader from "./componets/headers/DashboardHeader";
 import { PaperProvider } from "react-native-paper";
-import NewChatButton from "./componets/NewChatButton";
+import NewChatButton from "./componets/createChatModal/NewChatButton";
 import SearchBar from "./componets/search/SearchBar";
 import JoinChatByIdInput from "./componets/join/JoinByChatIdInput";
 import Dashboard from "./screens/Auth/Dashboard/Dashboard";
@@ -18,8 +18,8 @@ export default function App() {
 
   return (
     <PaperProvider>
-      {/* <Dashboard/> */}
-      <NavigationContainer>
+      <Dashboard/>
+      {/* <NavigationContainer>
       <Stack.Navigator 
       initialRouteName="Home" 
       >
@@ -54,7 +54,7 @@ export default function App() {
         }}
         />
       </Stack.Navigator>
-    </NavigationContainer>
+    </NavigationContainer> */}
     </PaperProvider>
   )
 }
