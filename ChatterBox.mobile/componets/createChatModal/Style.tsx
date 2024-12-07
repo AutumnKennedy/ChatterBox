@@ -6,17 +6,16 @@ const Style = StyleSheet.create({
         justifyContent: 'center',
         padding: 16,
       },
-      input: {
-        marginLeft: 25,
-        marginRight: 25,
-      },
-      errorText: {
-        color: 'red',
-        marginBottom: 16,
-      },
-      button: {
-        alignSelf: 'center',
-      },
+      title: {
+        marginLeft: 85,
+        marginBottom: 10
+       },
+      createButton: {
+       marginTop: 10,
+       marginLeft: 80,
+       marginRight: 80 
+      }
+      
    
 })
 
