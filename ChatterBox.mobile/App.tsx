@@ -12,13 +12,15 @@ import NewChatButton from "./componets/createChatModal/NewChatButton";
 import SearchBar from "./componets/search/SearchBar";
 import JoinChatByIdInput from "./componets/join/JoinByChatIdInput";
 import Dashboard from "./screens/Auth/Dashboard/Dashboard";
+import ChatRoomScreen from "./screens/Auth/ChatRoom/ChatRoomScreen";
 
 export default function App() {
   const Stack = createNativeStackNavigator<RootStackParamList>();
 
   return (
     <PaperProvider>
-      <Dashboard/>
+      <ChatRoomScreen/>
+      {/* <Dashboard/> */}
       {/* <NavigationContainer>
       <Stack.Navigator 
       initialRouteName="Home" 
