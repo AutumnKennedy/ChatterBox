@@ -4,7 +4,10 @@ const Style = StyleSheet.create({
     container: {
         flex: 1
     },
-    messagePreview: {
+    messageContainer: {
+        paddingTop: 30
+    },
+    message: {
         backgroundColor: 'white'
     }
 })

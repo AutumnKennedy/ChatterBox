@@ -3,7 +3,8 @@ import { View } from 'react-native';
 import { Divider, IconButton, Menu, Text } from 'react-native-paper';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import Style from './Style';
-import { Ionicons } from '@expo/vector-icons';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
+
 
 
 export default function ChatRoomHeader () {
@@ -11,8 +12,8 @@ export default function ChatRoomHeader () {
     const openMenu = () => setVisible(true);
      const closeMenu = () => setVisible(false);
 
-     let ChatroomTitle; //Will be passed in through props
-     let ChatroomIcon;  //Will be passed in through props
+     let ChatroomTitle = "Beach Trip Plan"; //Will be passed in through props in the future
+     let ChatroomIcon: any = "beach";  //Will be passed in through props in the future
 
     return (
         <SafeAreaProvider>
@@ -30,8 +31,8 @@ export default function ChatRoomHeader () {
                         </Menu>
                 </View>
                 <View style={Style.subtitle}>
-                    <Ionicons name={ChatroomIcon} size={28} color="black" />
-                    <Text variant='headlineSmall'>{ChatroomTitle}</Text>
+                    <MaterialCommunityIcons name={ChatroomIcon} size={28} color="black" />
+                    <Text variant='headlineMedium'>{ChatroomTitle}</Text>
                 </View>
                 <Divider/>
             </View>

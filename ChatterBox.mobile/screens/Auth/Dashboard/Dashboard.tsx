@@ -7,7 +7,7 @@ import JoinChatByIdInput from '../../../componets/join/JoinByChatIdInput';
 import { View } from 'react-native';
 import Style from './Style';
 import { Divider, Text } from 'react-native-paper';
-import MessagePreviewCard from '../../../componets/messages/messagePreview/messagePreviewCard';
+import MessagePreviewCard from '../../../componets/messages/messagePreview/MessagePreviewCard';
 
 export default function Dashboard() {
     
