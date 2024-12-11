@@ -5,12 +5,11 @@ const Style = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#b887e1',
     },
     title:{
         marginTop: 100,
         textAlign: 'center',
-        color: '#fff',
+        color: '#FAF9F6',
     },
     logo:{
         flex: 1,
@@ -20,7 +19,7 @@ const Style = StyleSheet.create({
     },
     subtitle:{
         textAlign: 'center',
-        color: '#fff',
+        color: '#FAF9F6',
         fontWeight: 'bold',
         marginTop: 20,
     },
@@ -28,7 +27,7 @@ const Style = StyleSheet.create({
         flex: 1,
         flexDirection: 'column',
         alignItems: 'center',
-        gap: 10,
+        gap: 20,
         marginTop: 40,
      },
      buttonContent: {

@@ -19,9 +19,9 @@ export default function App() {
 
   return (
     <PaperProvider>
-      <ChatRoomScreen/>
+      {/* <ChatRoomScreen/> */}
       {/* <Dashboard/> */}
-      {/* <NavigationContainer>
+      <NavigationContainer>
       <Stack.Navigator 
       initialRouteName="Home" 
       >
@@ -29,10 +29,7 @@ export default function App() {
         name="Home" 
         component={HomeScreen} 
         options={{ 
-          title: '',
-          headerStyle: {
-            backgroundColor: '#b887e1',
-          },
+          headerShown: false,
         }}
         />
         <Stack.Screen 
@@ -56,7 +53,7 @@ export default function App() {
         }}
         />
       </Stack.Navigator>
-    </NavigationContainer> */}
+    </NavigationContainer>
     </PaperProvider>
   )
 }
