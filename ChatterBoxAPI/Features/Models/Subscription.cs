@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using ChatterBoxAPI.Features.Authorization;
 
 namespace ChatterBoxAPI.Features.Models
 {
